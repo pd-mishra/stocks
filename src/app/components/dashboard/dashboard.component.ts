@@ -7,7 +7,7 @@ import { StocksService, StockInterface } from '../../services/stocks.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  stocks: Array<StockInterface>;
+  stocks: Array<StockInterface> = [];
   symbols: Array<string>;
 
   constructor(private service: StocksService) {
